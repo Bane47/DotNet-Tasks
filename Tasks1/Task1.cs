@@ -87,19 +87,19 @@ namespace Tasks
 
     public class Class3
     {
-      static void Main(string[] args)
-       {
-            // Class1 obj1 = new Class1();
-            //  Class2 obj2 = new Class2();
-            //  FloDoubDeci Calc = new FloDoubDeci();
-            Task2a task2Obj = new Task2a();
-            task2Obj.arrayBuilder();
-            task2Obj.oneDconvertor();
-               task2Obj.jaggedArray();
-             task2Obj.outParamCaller();
-            task2Obj.paramArr();
+      //static void Main(string[] args)
+      // {
+      //      // Class1 obj1 = new Class1();
+      //      //  Class2 obj2 = new Class2();
+      //      //  FloDoubDeci Calc = new FloDoubDeci();
+      //      Task2a task2Obj = new Task2a();
+      //      task2Obj.arrayBuilder();
+      //      task2Obj.oneDconvertor();
+      //         task2Obj.jaggedArray();
+      //       task2Obj.outParamCaller();
+      //      task2Obj.paramArr();
 
-        }
+      //  }
     }
 
     internal class Task2a
@@ -258,6 +258,7 @@ namespace Tasks
         }
 
     }
+
 
 
 
