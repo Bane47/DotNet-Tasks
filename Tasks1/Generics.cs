@@ -31,11 +31,25 @@ namespace Tasks1
             Console.WriteLine($"After swap first element is {a} and the second element is {b}");
         }
 
-        public void firsta(T a,T b,T c) 
+       
+
+
+    }
+    internal class task1c<T1,T2,T3>
+    {
+        T1 var1;
+        T2 var2;
+        T3 var3;
+
+        public task1c(T1 a,T2 b,T3 c)
         {
+            this.var1=a; this.var2 = b; this.var3 = c;
+
+            Console.WriteLine($"The type of {a} is "+typeof(T1));
+            Console.WriteLine($"The type of {b} is " + typeof(T2));
+            Console.WriteLine($"The type of {a} is " + typeof(T3));
 
         }
-
 
     }
   
@@ -85,7 +99,7 @@ namespace Tasks1
     {
         static void Main(string[] args)
       {
-           
+
 
 
             Console.WriteLine("Enter the number of rows of the array: ");
@@ -151,9 +165,9 @@ namespace Tasks1
                 obj2.swapper(a, b, c);
             }
 
-            MyGeneric<int> obj3 = new MyGeneric<int>();
-            MyGeneric<char> obj4 = new MyGeneric<char>();
-            MyGeneric<string> obj5 = new MyGeneric<string>();
+
+            task1c<int, string, char> task1c1 = new task1c<int, string, char>(500, "Darshan", 's');
+
 
 
             sec.secondTask();
@@ -171,6 +185,9 @@ namespace Tasks1
             Console.WriteLine("Name : " + thir.name);
             Console.WriteLine("Age :" + thir.name);
             Console.WriteLine("Location : " + thir.name);
+
+
+
 
             Console.ReadLine();
        }
