@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tasks;
 
 namespace Tasks_For_AS_differences_
 {
-    internal class Program
+    internal class Task6B
     {
+
+        public void Task6B()
+        {
+            Console.WriteLine("Enter the amount: ");
+            
+        }
+
         static void Main(string[] args)
         {
-            Class2 myobj = new Class2();
-            Class1 myobj2 = new Class1();
+            Task6B obj = new Task6B();
         }
     }
 }
