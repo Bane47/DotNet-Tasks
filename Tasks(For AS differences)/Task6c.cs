@@ -12,7 +12,7 @@ namespace Tasks_For_AS_differences_
         public string Name;
         public double salary;
 
-        public  void Details()
+        public void Details()
         {
             Console.WriteLine("Salary: "+salary);
 
@@ -34,7 +34,7 @@ namespace Tasks_For_AS_differences_
     internal class Employee2
     {
         public double Salary;
-        public void Details2()
+        public virtual void Details2()
         {
             Console.WriteLine("Salary: "+Salary);
         }
@@ -43,7 +43,7 @@ namespace Tasks_For_AS_differences_
     {
         public double Bonus;
 
-        public void Details2()
+        public override void Details2()
         {
             Console.WriteLine("Salary:"+Salary+" Bonus: "+Bonus);
         }
