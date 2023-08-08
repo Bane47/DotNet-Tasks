@@ -12,7 +12,7 @@ namespace Tasks_For_AS_differences_
 
         static void Main(string[] args)
         {
-            Regex reg_pass = new Regex("[A-Za-z][0-9](?=.*?[!@#$%^&*]){8,16}");
+            Regex reg_pass = new Regex("^[A-Za-z_]+$");
             Regex reg_Phone = new Regex("[3-5]{3}-[0-9]{4}-[0-9]{3}");
             Regex reg_mobile = new Regex("[1-8]{10}");
 
@@ -32,9 +32,6 @@ namespace Tasks_For_AS_differences_
             phone.Add(Console.ReadLine());
 
             phone.ForEach(q => Console.WriteLine(Regex.IsMatch(q.ToString(), reg_Phone.ToString())));
-
-
-          
 
 
         }
